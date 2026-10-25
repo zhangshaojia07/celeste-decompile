@@ -1,7 +1,7 @@
 # celeste-decompile
 
 A read-only reference copy of decompiled vanilla Celeste, kept in one place so
-mod repos (like [ShaojaHelper](https://github.com/zhangshaojia07/ShaojiaHelper))
+mod repos (like [ShaojiaHelper](https://github.com/zhangshaojia07/ShaojiaHelper))
 can point at it instead of each keeping their own decompile.
 
 > **Important:** `source/` is decompiled Celeste code. It is read-only and is
