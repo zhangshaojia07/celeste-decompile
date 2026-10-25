@@ -1,0 +1,8 @@
+# Decompiled vanilla Celeste output — never commit, never share (see AGENT.md)
+/source/
+/source.tmp/
+/source.old/
+/.lock
+
+# Machine-specific Celeste install path
+.celeste-path

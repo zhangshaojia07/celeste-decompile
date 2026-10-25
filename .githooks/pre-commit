@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+# Reject any commit that stages paths under source/ (decompiled Celeste code).
+# See AGENT.md. Enable on a fresh clone with: git config core.hooksPath .githooks
+
+if git diff --cached --name-only --diff-filter=ACMR | grep -Eq '^source(/|$)'; then
+    echo "ERROR: source/ is decompiled Celeste code and must never be committed." >&2
+    echo "       Unstage it with: git reset -- source/" >&2
+    echo "       If it was ever committed, rewrite history (see AGENT.md)." >&2
+    exit 1
+fi
+
+exit 0
